@@ -1,0 +1,43 @@
+ @mixin fontdeta($fz,$fw,$c) {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: $fz;
+    font-weight: $fw;
+    color:$c;
+     
+ }
+
+ @mixin divsize($w,$h,$bg){
+     width: $w;
+     height: $h;
+     background:$bg;
+
+ }
+ @mixin title1(){
+    max-width: 700px; 
+    position:relative;
+
+ }
+
+ @mixin title2(){
+     opacity: 0.1;
+     font-family: "Josefin Sans", sans-serif;
+     font-size: 115px;
+     font-weight: 700;
+     color:$color3;
+                    
+    }
+
+ @mixin title3(){
+     
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    color:$color2; 
+    width: 100%;
+    position:absolute;
+    bottom:20px; 
+ }
+ 
+
+
+ 

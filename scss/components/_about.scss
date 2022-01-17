@@ -1,0 +1,193 @@
+section.about{
+
+
+    margin-top: 100px;
+    margin-bottom: 0px !important;
+    position:relative;
+    background-color: #fff;
+     
+
+    img.about_after{
+        position: absolute;
+        bottom:-110px;
+    }
+    
+  
+     
+     
+    // ========= Paralax Start ========
+    .round1{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: dodgerblue;
+        left: 350px !important;
+        top: 200px !important;
+    }
+    .round2{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: orangered;
+        left: 1000px !important;
+        top: 150px !important;
+    }
+    .round3{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: slateblue;
+        left: 1400px !important;
+        top: 150px !important;
+    }
+    .round4{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: rgb(0, 101, 168);
+        left: 350px !important;
+        top: 600px !important;
+    }
+    .round5{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: rgb(26, 131, 0);
+        left: 1000px !important;
+        top: 650px !important;
+    }
+    .round6{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: rgb(0, 133, 185);
+        left: 1400px !important;
+        top: 650px !important;
+    }
+    .comki1{
+        width: 30px;
+        height: 30px;
+        
+        background-color: yellowgreen;
+        left: 900px !important;
+        top: 300px !important;
+        clip-path: polygon(28% 0, 4% 100%, 100% 79%);
+         
+    }
+
+    .comki2{
+        width: 45px;
+        height: 45px;
+        
+        background-color: dodgerblue;
+        left: 1500px !important;
+        top: 350px !important;
+        clip-path: polygon(85% 0, 0 48%, 86% 100%);
+         
+    }
+   
+    .comki3{
+            width: 40px;
+            height: 40px;
+            
+            background-color: rgb(255, 123, 0);
+            left: 300px !important;
+            top: 600px !important;
+            clip-path: polygon(28% 0, 4% 100%, 100% 79%);
+             
+        }
+    
+        .comki4{
+            width: 25px;
+            height: 25px;
+            
+            background-color: rgb(44, 29, 182);
+            left: 1500px !important;
+            top: 600px !important;
+            clip-path: polygon(85% 0, 0 48%, 86% 100%);
+             
+        }
+    
+    .dag1{
+        left: 350px !important;
+        top: 150px !important;
+        
+    }
+        
+    .dag2{
+        left: 1550px !important;
+        top: 450px !important;
+        
+    }
+    // ========= Paralax end ========
+
+    .main{
+        justify-content: space-between;
+        align-items: center;
+
+        .left{
+            flex-basis: 30%;  
+        }
+             
+            
+        .right{
+            flex-basis: 65%;
+            
+            height: 300px;
+           .title{
+               @include title1();
+                
+
+               
+               h2{
+                   @include title2();
+                    
+                }
+                h3{
+                    @include title3();
+                    
+                }
+                    
+            } 
+            p{
+                @include fontdeta(20px,400,$color2);
+                letter-spacing: 1px;
+                line-height: 1.5;
+                text-align: justify;
+                margin-bottom: 20px;
+            }
+            .icons{
+                i{
+                    width: 35px;
+                    height: 35px;
+                    // border:1px solid #000;
+                    text-align: center;
+                    line-height: 37px;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                    background-color: $color1;
+                    color:#fff;
+                    font-size: 18px;
+                    transition: 0.4s;
+                    cursor: pointer;
+
+                    &:hover{
+                        background-color: $color2;
+                        color:#fff;
+                    }
+                }
+            }   
+             
+         }
+     }
+ }
+                     
+                    
+                
+               
+               
+
+
+
+                    
+                

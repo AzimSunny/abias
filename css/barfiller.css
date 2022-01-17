@@ -1,0 +1,70 @@
+
+ 
+.progress{
+  width:70%;
+  margin: 0 auto;
+}
+.progress .main{
+  justify-content: space-between;
+}
+.progress h2{
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  color:#fff;
+  margin:0px 5px 5px;
+  text-shadow: 1px 1px 1px #000;
+   
+}
+.barfiller {
+  width: 100%;
+  height: 20px;
+  background: #fcfcfc;
+  border: 5px solid #111;
+  position: relative;
+  margin: 0px auto 40px;
+  box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,.5);
+  -moz-box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,.5);
+  border-radius: 20px;
+  background-color: #111;
+
+}
+ 
+ 
+
+.barfiller .fill {
+  display: block;
+  position: relative;
+  width: 0px;
+  height: 100%;
+   
+  z-index: 1;
+  background-color: #08baf6 !important;
+  border-radius: 20px;
+   
+}
+
+.barfiller .tipWrap { display: none; }
+
+.barfiller .tip {
+  margin-top: -30px;
+  padding: 2px 4px;
+  font-size: 11px;
+  color: #fff;
+  left: 0px;
+  position: absolute;
+  z-index: 2;
+  background: rgb(138, 121, 121);
+   
+}
+
+.barfiller .tip:after {
+  border: solid;
+  border-color: rgba(0,0,0,.8) transparent;
+  border-width: 6px 6px 0 6px;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 9px;
+  top: 100%;
+  z-index: 9
+}

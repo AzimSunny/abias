@@ -1,0 +1,14 @@
+@import './mixins/mixin';
+@import './variables/variables';
+@import './base/common';
+@import './pages/home';
+@import './components/preloader';
+
+
+ 
+
+ 
+ html{
+     overflow: auto;
+ }
+ 

@@ -1,0 +1,113 @@
+ nav{
+
+
+     width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    
+    
+    
+     .logo{
+         width: 20%;
+         padding-top: 20px;
+        
+          
+     }
+     .nav_links{
+         width: 80%;
+          
+
+
+         ul{
+              
+             background-color: $color2;
+             position: absolute;
+             top: 0;
+             right:0;
+             width: 55%;
+             border-bottom-left-radius: 50px;
+
+             li{
+                 display: inline-block;
+                 padding: 35px 5px;
+                 margin-left: 30px;
+                 position: relative;
+                 transition: .4s;
+
+                 &:first-child{
+                     margin-left: 40px;
+                    }
+                      
+                 
+                 
+
+                 a{
+                     text-decoration: none;
+                     @include fontdeta(18px,500,#fff);
+                     transition: .4s;
+
+                    }
+                    &:hover {
+                        a{
+                            color:#aaa;
+                        }
+                    }
+
+                     
+                      
+
+
+
+                    ul.two{
+                        background-color:$color2;
+                        width: 200px;
+                        border-radius: 0px;
+                        top: 50px;
+                        left: -5px;
+                        position: absolute;
+                        transition: .6s;
+                        visibility: hidden;
+                        opacity: 1;
+                        transform: rotateX(-90deg);
+                        transform-origin: top;
+                        z-index: -1;
+                         
+                        
+
+                        li{
+                            display: block;
+                            &:first-child{
+                                margin-left: 30px !important;
+                            }
+
+                            a{
+                                color:#fff !important;
+                                transition: .4s;
+
+                                &:hover{
+                                    color:#aaa !important;
+                                }
+                            }
+                             
+                        }
+                    }
+
+                    &:hover{
+                        ul{
+                            top: 89px;
+                            visibility: visible;
+                            opacity: 1;
+                            transform: rotateX(0deg);
+                        }
+                    }
+
+                    
+                      
+
+
+
+             }
+         }
+     }
+ }

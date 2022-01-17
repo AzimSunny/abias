@@ -1,0 +1,174 @@
+section.banner{
+     
+     
+    padding-top:300px;
+
+    .img{
+        
+          
+         position:absolute;
+         top: 0;
+         right:0; 
+         z-index: -1;
+         
+
+         img{
+             position:absolute;
+             top: 0;
+             right: 0;
+         }
+         .img2{
+             top: 60px;
+              
+         }
+        }
+        .shape2{
+            position:absolute;
+            top: 20%;
+            left: 0;
+
+        }
+         
+
+    
+    h4{
+        @include fontdeta(30px,400,$color1);
+        margin-bottom: 40px;
+    }
+    h1{
+        @include fontdeta(80px,700,$color2);
+        margin-bottom: 22px;
+
+        span{
+            color:$color1;
+            text-shadow: 2px 2px 2px black;
+        }
+    }
+    h3{
+        @include fontdeta(48px,700,$color2);
+         
+    }
+    h5{
+        @include fontdeta(24px,400,$color2);
+        margin:30px 0px 40px;
+    }
+    .btn{
+        text-decoration: none;
+        @include fontdeta(20px,700,#fff);
+        background-color: $color1;
+        padding: 16px 40px;
+        display:inline-block;
+        border-radius: 8px 8px 25px 8px;
+        position:relative;
+        overflow: hidden;
+        margin-right: 20px;
+
+
+        &:after{
+            content: "";
+            width: 50px;
+            height: 120%;
+            background-color: rgba(0,0,0,0.2);
+            position:absolute;
+            top: 0;
+            right: -10px;
+            transform: skewX(-20deg);
+            transition: 0.4s;
+
+        }
+        &:before{
+            content: "";
+            width: 40px;
+            height: 120%;
+            background-color: rgba(0,0,0,0.3);
+            position:absolute;
+            top: 0;
+            right: -10px;
+            transform: skewX(-20deg);
+            transition: 0.4s;
+
+        }
+
+        &:hover:after{
+            width: 0px;
+        }
+        &:hover:before{
+            width: 0px;
+        }
+
+        
+    }
+
+    .btn2{
+        background-color: #333;
+
+        &:after{
+            content: "";
+            width: 50px;
+            height: 120%;
+            background-color: rgba(255,255,255,0.1);
+            position:absolute;
+            top: 0;
+            left: -10px;
+            transform: skewX(-20deg);
+            transition: 0.4s;
+            opacity: 0.5;
+
+        }
+
+        &:before{
+            content: "";
+            width: 40px;
+            height: 120%;
+            background-color: rgba(255,255,255,0.2);
+            position:absolute;
+            top: 0;
+            left: -10px;
+            transform: skewX(-20deg);
+            transition: 0.4s;
+            opacity: 0.5;
+
+        }
+
+        &:hover:after{
+            width: 0px;
+        }
+        &:hover:before{
+            width: 0px;
+        }
+
+
+     }
+    
+
+}
+
+.fa-chevron-up{
+    width: 60px;
+    height: 60px;
+    background-color: $color5;
+    border:3px solid #fff;
+    color:$color1;
+    text-align: center;
+    line-height: 55px;
+    border-radius: 50%;
+    position:fixed;
+    bottom:0px;
+    right: 200px;
+    z-index: 1000;
+    transition: 0.4s;
+    opacity: 0;
+
+    &:hover{
+        box-shadow: 0px 0px 15px 0px $color1;
+    }
+     
+}
+.arrowUp{
+    opacity: 1;
+    bottom:60px;
+     
+     
+    
+}
+    
